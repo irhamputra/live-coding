@@ -58,7 +58,7 @@ class App extends Component {
 				const data = { ...this.state };
 				
 				axios
-						.post("https://live-coding-server.now.sh/update-editor", data)
+						.post("https://cors-anywhere.herokuapp.com/https://live-coding-server.now.sh/update-editor", data)
 						.catch(console.error);
 		};
     
